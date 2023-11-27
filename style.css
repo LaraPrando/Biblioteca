@@ -1,0 +1,146 @@
+body, p {
+    background-color: #9E6358;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.principal {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100% 0%;
+    grid-template-rows: 100px 1000px 50px;
+    grid-template-areas: "cabecalho cabecalho"
+                         "secao barra-lateral"
+                          "rodape rodape";
+ }
+
+header {
+    grid-area: cabecalho;
+    background-color:  #722618;
+}
+section {
+    grid-area: secao;
+    background-color: #9E6358;
+}
+.img1 {
+    position: absolute;
+width: 404px;
+height: 340px;
+left: 150px;
+top: 240px;
+}
+.img2 {
+    position: absolute;
+width: 404px;
+height: 340px;
+left: 950px;
+top: 560px;
+
+}
+
+.container3 {
+   width: 150%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 5px;
+   border: 1px solid #9E6358;
+   box-sizing: border-box;
+   margin-left: 586px;
+   margin-top: -391px;
+  
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: double;
+    margin-left: 55%;
+    margin-top: 8%;
+     box-shadow: 0px 0px 10px black;
+     text-align: center;
+
+}
+.container2 {
+    width: 150%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #9E6358;
+    box-sizing: border-box;
+    margin-left: -778px;
+    margin-top: -391px;
+   
+ }
+ .container_listar {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: double;
+    margin-left: 33%;
+    margin-top: 8%;
+     box-shadow: 10px 10px 20px black;
+     text-align: center;
+
+}
+#menu {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(43, 40, 46);
+    font-weight: bold;
+    font-size: 16pt;
+    
+}
+
+#menu a {
+    text-decoration: none;
+    color: #8c1d9b;
+
+}
+
+#menu a:hover {
+    text-decoration: none;
+    color: white;
+
+}
+
+#menu li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+aside {
+    grid-area: barra-lateral;
+    background-color: rgb(43, 162, 226);
+}
+footer {
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-evenly;
+} 
+.parte1, .parte2, .parte3 {
+    width: 25%;
+    background-color: #722618;
+}
+.parte2 {
+    width: 50%;
+    margin: 0 2px;
+}
+.parte3 {
+    margin: 0;
+}
+@media(max-width: 768px) {
+    body {
+        margin: 0 15px;
+    }
+    .principal, .parte1, .parte2, .parte3 {
+        width: 100%;
+    }  
+    .parte2 {
+        order:initial;
+    }
+}
